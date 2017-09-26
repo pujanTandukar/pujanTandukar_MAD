@@ -18,4 +18,8 @@ Colours is an app that lets users find an appropriate color scheme. There are tw
  
  ![logo](https://github.com/pujanTandukar/pujanTandukar_MAD/blob/master/project1/logo.jpg)
   
+ ![logo](https://github.com/pujanTandukar/pujanTandukar_MAD/blob/master/project1/scheme.jpg)
+  
+ ![logo](https://github.com/pujanTandukar/pujanTandukar_MAD/blob/master/project1/outline.jpg)
+  
  
