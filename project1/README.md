@@ -15,11 +15,11 @@ Colours is an app that lets users find an appropriate color scheme. There are tw
  My app will be fairly simple but the main focus will be on the minimalistic design and a simple user interface. 
   I might use color formulas, if needed from the web.
   
- 
- ![logo width="30"](https://github.com/pujanTandukar/pujanTandukar_MAD/blob/master/project1/logo.jpg)
-  
- ![logo](https://github.com/pujanTandukar/pujanTandukar_MAD/blob/master/project1/scheme.jpg)
-  
- ![logo](https://github.com/pujanTandukar/pujanTandukar_MAD/blob/master/project1/outline.jpg)
+ <br>
+<img height = "300" src = "https://github.com/pujanTandukar/pujanTandukar_MAD/blob/master/project1/logo.jpg"/>
+<br>
+<img height = "500" src = "https://github.com/pujanTandukar/pujanTandukar_MAD/blob/master/project1/scheme.jpg"/> 
+<img height = "500" src = "https://github.com/pujanTandukar/pujanTandukar_MAD/blob/master/project1/outline.jpg"/>
+<br>
   
  
