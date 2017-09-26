@@ -16,6 +16,6 @@ Colours is an app that lets users find an appropriate color scheme. There are tw
   I might use color formulas, if needed from the web.
   
  
- 
+ ![logo](https://raw.github.com/pujanTandukar/pujanTandukar_MAD/blob/master/project1/logo.jpg)
   
  
