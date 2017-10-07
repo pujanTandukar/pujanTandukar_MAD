@@ -88,12 +88,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hRy-m5-mBI" kind="presentation" modalTransitionStyle="crossDissolve" id="9Oz-8x-IiJ"/>
+                                    <segue destination="hRy-m5-mBI" kind="presentation" modalTransitionStyle="crossDissolve" id="d5p-Xq-xZx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHd-EE-5ZN">
                                 <rect key="frame" x="123" y="28" width="128" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Generate"/>
                                 <connections>
@@ -144,7 +144,7 @@
                             </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laK-TR-8Nt">
                                 <rect key="frame" x="72" y="120" width="230" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92415966009999995" green="0.96902874019999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -153,7 +153,7 @@
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="3tE-gG-Ras">
                                 <rect key="frame" x="91" y="289" width="193" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="redSlider:" destination="hRy-m5-mBI" eventType="valueChanged" id="uTz-pi-2jc"/>
@@ -161,12 +161,12 @@
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="34" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="mjg-hm-yHY">
                                 <rect key="frame" x="91" y="362" width="193" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="CVE-3m-uD3">
                                 <rect key="frame" x="91" y="444" width="193" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="blueSlider:" destination="hRy-m5-mBI" eventType="valueChanged" id="nbq-wW-xxw"/>
@@ -186,6 +186,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vP4-t4-6MG"/>
+        <segue reference="d5p-Xq-xZx"/>
     </inferredMetricsTieBreakers>
 </document>
