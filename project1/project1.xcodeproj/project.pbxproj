@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7940A6071F956ACC00C256D4 /* colorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940A6061F956ACC00C256D4 /* colorData.swift */; };
+		794DC8521F95C30C00FE8EAA /* Poiret_One in Resources */ = {isa = PBXBuildFile; fileRef = 794DC8511F95C30C00FE8EAA /* Poiret_One */; };
 		79646EEF1F84C956005CD2C0 /* outlineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79646EEE1F84C956005CD2C0 /* outlineVC.swift */; };
 		79671D001F7A000300638305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79671CFF1F7A000300638305 /* AppDelegate.swift */; };
 		79671D021F7A000300638305 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79671D011F7A000300638305 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7940A6061F956ACC00C256D4 /* colorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colorData.swift; sourceTree = "<group>"; };
+		794DC8511F95C30C00FE8EAA /* Poiret_One */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Poiret_One; sourceTree = SOURCE_ROOT; };
 		79646EEE1F84C956005CD2C0 /* outlineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outlineVC.swift; sourceTree = "<group>"; };
 		79671CFC1F7A000300638305 /* project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79671CFF1F7A000300638305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +63,12 @@
 				79671CFF1F7A000300638305 /* AppDelegate.swift */,
 				79671D011F7A000300638305 /* ViewController.swift */,
 				79671D031F7A000300638305 /* Main.storyboard */,
+				7940A6061F956ACC00C256D4 /* colorData.swift */,
 				79646EEE1F84C956005CD2C0 /* outlineVC.swift */,
 				79671D061F7A000300638305 /* Assets.xcassets */,
 				79671D081F7A000300638305 /* LaunchScreen.storyboard */,
 				79671D0B1F7A000300638305 /* Info.plist */,
+				794DC8511F95C30C00FE8EAA /* Poiret_One */,
 			);
 			path = project1;
 			sourceTree = "<group>";
@@ -129,6 +135,7 @@
 			files = (
 				79671D0A1F7A000300638305 /* LaunchScreen.storyboard in Resources */,
 				79671D071F7A000300638305 /* Assets.xcassets in Resources */,
+				794DC8521F95C30C00FE8EAA /* Poiret_One in Resources */,
 				79671D051F7A000300638305 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +150,7 @@
 				79671D021F7A000300638305 /* ViewController.swift in Sources */,
 				79646EEF1F84C956005CD2C0 /* outlineVC.swift in Sources */,
 				79671D001F7A000300638305 /* AppDelegate.swift in Sources */,
+				7940A6071F956ACC00C256D4 /* colorData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

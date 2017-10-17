@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,87 +22,144 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="978-no-Fio">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="978-no-Fio">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="6Ak-SS-DGY"/>
-                                    <barButtonItem title="Scheme" id="1pZ-6S-Epw"/>
+                                    <barButtonItem title="Scheme" style="plain" id="1pZ-6S-Epw"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="dmO-0K-Q85"/>
                                     <barButtonItem title="Outline" id="xoZ-DI-z5w">
                                         <connections>
-                                            <segue destination="hRy-m5-mBI" kind="presentation" identifier="outlineView" modalTransitionStyle="flipHorizontal" id="vP4-t4-6MG"/>
+                                            <segue destination="hRy-m5-mBI" kind="presentation" identifier="outlineButton" modalTransitionStyle="flipHorizontal" id="vP4-t4-6MG"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="R1c-xK-Dxw"/>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7q-BY-o2d">
-                                <rect key="frame" x="102" y="90" width="170" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.94509803921568625" green="0.5607843137254902" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="#F18F01">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hRy-m5-mBI" kind="presentation" modalTransitionStyle="crossDissolve" id="YLR-Ln-Hj2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp6-yS-VG6">
-                                <rect key="frame" x="102" y="193" width="170" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33333333333333331" green="0.78823529411764703" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="#59C985">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hRy-m5-mBI" kind="presentation" modalTransitionStyle="crossDissolve" id="KbL-tI-HGq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfQ-Tm-hDh">
-                                <rect key="frame" x="102" y="298" width="170" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.84705882352941175" green="0.11764705882352941" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="#D815EB">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hRy-m5-mBI" kind="presentation" modalTransitionStyle="crossDissolve" id="DoH-cE-pFt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQN-30-Ofw">
-                                <rect key="frame" x="102" y="402" width="170" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.13725490196078433" green="0.22352941176470587" blue="0.70202333537581696" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="#2339B3">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hRy-m5-mBI" kind="presentation" modalTransitionStyle="crossDissolve" id="JbT-QI-Li8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dh-mJ-Rix">
-                                <rect key="frame" x="102" y="503" width="170" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.13333333333333333" green="0.55294117647058827" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="#228D50">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hRy-m5-mBI" kind="presentation" modalTransitionStyle="crossDissolve" id="d5p-Xq-xZx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHd-EE-5ZN">
-                                <rect key="frame" x="123" y="28" width="128" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Generate"/>
-                                <connections>
-                                    <action selector="generateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGN-cs-MwA"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3aZ-cZ-gvO">
+                                <rect key="frame" x="66" y="28" width="243" height="566"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHd-EE-5ZN">
+                                        <rect key="frame" x="0.0" y="0.0" width="243" height="77.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="19"/>
+                                        <state key="normal" title="Generate"/>
+                                        <connections>
+                                            <action selector="generateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGN-cs-MwA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7q-BY-o2d">
+                                        <rect key="frame" x="0.0" y="97.5" width="243" height="78"/>
+                                        <color key="backgroundColor" red="0.94509803921568625" green="0.5607843137254902" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="#F18F01">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="hRy-m5-mBI" kind="presentation" identifier="colorTrigger1" id="163-Vu-2Nx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp6-yS-VG6">
+                                        <rect key="frame" x="0.0" y="195.5" width="243" height="77.5"/>
+                                        <color key="backgroundColor" red="0.33333333333333331" green="0.78823529411764703" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="#59C9A5">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="hRy-m5-mBI" kind="presentation" identifier="colorTrigger2" id="Ch5-ms-Bw1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfQ-Tm-hDh">
+                                        <rect key="frame" x="0.0" y="293" width="243" height="77.5"/>
+                                        <color key="backgroundColor" red="0.84705882352941175" green="0.11764705882352941" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="#D8155B">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="hRy-m5-mBI" kind="presentation" identifier="colorTrigger3" id="c2o-e5-1yy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQN-30-Ofw">
+                                        <rect key="frame" x="0.0" y="390.5" width="243" height="78"/>
+                                        <color key="backgroundColor" red="0.13725490196078433" green="0.22352941176470587" blue="0.70202333537581696" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="#2339B3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="13"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="hRy-m5-mBI" kind="presentation" identifier="colorTrigger4" id="cDd-3V-LUD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dh-mJ-Rix">
+                                        <rect key="frame" x="0.0" y="488.5" width="243" height="77.5"/>
+                                        <color key="backgroundColor" red="0.13333333333333333" green="0.55294117647058827" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="#228D50">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="11"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="hRy-m5-mBI" kind="presentation" identifier="colorTrigger5" id="lnB-rJ-vsH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="978-no-Fio" firstAttribute="top" secondItem="3aZ-cZ-gvO" secondAttribute="bottom" constant="29" id="60i-zJ-a7p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3aZ-cZ-gvO" secondAttribute="trailing" constant="50" id="6Ty-Ta-Pfe"/>
+                            <constraint firstItem="978-no-Fio" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ShR-Ai-3BG"/>
+                            <constraint firstItem="3aZ-cZ-gvO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="bAX-w3-IVZ"/>
+                            <constraint firstItem="978-no-Fio" firstAttribute="centerX" secondItem="3aZ-cZ-gvO" secondAttribute="centerX" id="dnZ-i7-M7h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="978-no-Fio" secondAttribute="bottom" id="jWd-fo-dRJ"/>
+                            <constraint firstItem="3aZ-cZ-gvO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="wQe-AR-OS8"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="button1" destination="K7q-BY-o2d" id="e5N-Yx-Tas"/>
@@ -113,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.59999999999999" y="152.47376311844079"/>
+            <point key="canvasLocation" x="125" y="152.34375"/>
         </scene>
         <!--OutlineVC-->
         <scene sceneID="m1O-zm-jdJ">
@@ -134,7 +192,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Bgw-xa-hqt"/>
                                     <barButtonItem title="Scheme" id="fDy-vO-eDM">
                                         <connections>
-                                            <segue destination="Gbf-HG-VHC" kind="unwind" identifier="schemeView" unwindAction="unwindSegue:" id="262-fd-S5h"/>
+                                            <segue destination="Gbf-HG-VHC" kind="unwind" identifier="schemeButton" unwindAction="unwindSegue:" id="dZx-L4-65g"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="K1H-W9-eyY"/>
@@ -142,30 +200,59 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="uz8-aN-pf5"/>
                                 </items>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laK-TR-8Nt">
-                                <rect key="frame" x="72" y="120" width="230" height="117"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxK-xL-s2y">
+                                <rect key="frame" x="251" y="330" width="30.5" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92415966009999995" green="0.96902874019999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qp-q8-4GD">
+                                <rect key="frame" x="252" y="428.5" width="30" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="mjg-hm-yHY">
+                                <rect key="frame" x="107" y="390" width="160" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="Gbf-HG-VHC" kind="unwind" unwindAction="unwindSegue:" id="3jF-0G-Yqk"/>
+                                    <action selector="greenSlider:" destination="hRy-m5-mBI" eventType="valueChanged" id="WDB-tq-wr4"/>
                                 </connections>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="3tE-gG-Ras">
-                                <rect key="frame" x="91" y="289" width="193" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itT-lX-PjF">
+                                <rect key="frame" x="252" y="527" width="30" height="23.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="3tE-gG-Ras">
+                                <rect key="frame" x="108" y="303" width="160" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="redSlider:" destination="hRy-m5-mBI" eventType="valueChanged" id="uTz-pi-2jc"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="34" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="mjg-hm-yHY">
-                                <rect key="frame" x="91" y="362" width="193" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laK-TR-8Nt">
+                                <rect key="frame" x="99.5" y="98" width="177" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="120" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="CVE-3m-uD3">
-                                <rect key="frame" x="91" y="444" width="193" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="#000000">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="CVE-3m-uD3">
+                                <rect key="frame" x="107" y="489" width="160" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -176,16 +263,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="blueLabel" destination="itT-lX-PjF" id="dCP-S6-VSP"/>
+                        <outlet property="blueSliderValue" destination="CVE-3m-uD3" id="1zF-DE-Amy"/>
                         <outlet property="buttonMain" destination="laK-TR-8Nt" id="pPw-aa-Lh2"/>
+                        <outlet property="greenLabel" destination="6Qp-q8-4GD" id="B97-ra-vtk"/>
+                        <outlet property="greenSliderValue" destination="mjg-hm-yHY" id="T0C-4N-94J"/>
+                        <outlet property="redLabel" destination="fxK-xL-s2y" id="whf-A9-Q45"/>
+                        <outlet property="redSliderValue" destination="3tE-gG-Ras" id="sln-Ql-MjW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rkO-EN-HAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Gbf-HG-VHC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="884" y="151.57421289355324"/>
+            <point key="canvasLocation" x="881.25" y="150"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="d5p-Xq-xZx"/>
+        <segue reference="163-Vu-2Nx"/>
     </inferredMetricsTieBreakers>
 </document>
