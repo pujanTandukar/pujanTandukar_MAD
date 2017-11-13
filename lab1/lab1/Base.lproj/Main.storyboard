@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad10_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,60 +19,60 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pf4-Ls-LIL">
-                                <rect key="frame" x="62" y="84" width="162" height="30"/>
+                                <rect key="frame" x="58" y="84" width="162" height="30"/>
                                 <state key="normal" title="The Great Wall of China"/>
                                 <connections>
                                     <action selector="chooseWonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOD-LH-OyO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4S-Yy-gKk">
-                                <rect key="frame" x="665" y="198" width="107" height="30"/>
+                                <rect key="frame" x="210" y="198" width="107" height="30"/>
                                 <state key="normal" title="The Colosseum"/>
                                 <connections>
                                     <action selector="chooseWonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cOy-g6-dgd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FO4-qv-9Zo">
-                                <rect key="frame" x="707" y="160" width="65" height="30"/>
+                                <rect key="frame" x="252" y="160" width="65" height="30"/>
                                 <state key="normal" title="Taj Mahal"/>
                                 <connections>
                                     <action selector="chooseWonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ea9-Xn-Q1M"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVu-bW-SXL">
-                                <rect key="frame" x="62" y="122" width="142" height="30"/>
+                                <rect key="frame" x="58" y="122" width="142" height="30"/>
                                 <state key="normal" title="Christ the Redeemer"/>
                                 <connections>
                                     <action selector="chooseWonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eFz-zq-QxO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpd-7z-5ND">
-                                <rect key="frame" x="62" y="160" width="97" height="30"/>
+                                <rect key="frame" x="58" y="160" width="97" height="30"/>
                                 <state key="normal" title="Machu Picchu"/>
                                 <connections>
                                     <action selector="chooseWonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbf-us-Nas"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKb-Bc-NEy">
-                                <rect key="frame" x="62" y="198" width="86" height="30"/>
+                                <rect key="frame" x="58" y="198" width="86" height="30"/>
                                 <state key="normal" title="Chichen Itza"/>
                                 <connections>
                                     <action selector="chooseWonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jqj-CX-MsX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vya-rd-uHT">
-                                <rect key="frame" x="735" y="122" width="37" height="30"/>
+                                <rect key="frame" x="280" y="122" width="37" height="30"/>
                                 <state key="normal" title="Petra"/>
                                 <connections>
                                     <action selector="chooseWonder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cLu-QD-fO3"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="china" translatesAutoresizingMaskIntoConstraints="NO" id="q7v-43-fJA">
-                                <rect key="frame" x="41" y="261" width="759" height="237"/>
+                                <rect key="frame" x="37" y="261" width="308" height="237"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="237" id="oFu-Cy-nkz">
                                         <variation key="heightClass=compact" constant="182"/>
@@ -80,13 +80,13 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="7 Wonders of the New World" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qdp-dG-pXW">
-                                <rect key="frame" x="62" y="28" width="710" height="30"/>
+                                <rect key="frame" x="58" y="28" width="259" height="30"/>
                                 <color key="textColor" red="0.97760260109999997" green="0.47422568599999998" blue="0.39977552869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3U-XY-ZFb">
-                                <rect key="frame" x="41" y="539" width="752" height="63"/>
+                                <rect key="frame" x="37" y="539" width="301" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="ODH-qI-DVt">
                                         <variation key="heightClass=compact" constant="98"/>
@@ -98,7 +98,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Great Wall of China" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4q-iU-e9d">
-                                <rect key="frame" x="327" y="510" width="181" height="21"/>
+                                <rect key="frame" x="97.5" y="510" width="181" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
