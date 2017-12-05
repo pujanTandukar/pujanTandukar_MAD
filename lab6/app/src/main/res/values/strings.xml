@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">lab6</string>
+    <string name="phonePicker">Phone Picker</string>
+    <string name="chooseMe">Choose your budget:</string>
+    <string name="findPhoneButton">Find Phone</string>
+    <string name="imageContent">Phone</string>
+    <string name="pickMe">You should check this phone out!</string>
+    <string name="secondPageDescription">Phone Picture</string>
+    <string name="phonePrice">Price:</string>
+    <string-array name="phoneChoices">
+        <item>$100-$300</item>
+        <item>$300-$600</item>
+        <item>$600-$900</item>
+        <item>$900-$1200</item>
+    </string-array>
+</resources>
