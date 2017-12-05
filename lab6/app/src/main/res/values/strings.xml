@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">lab6</string>
+    <string name="app_name">Phone Picker</string>
     <string name="phonePicker">Phone Picker</string>
     <string name="chooseMe">Choose your budget:</string>
     <string name="findPhoneButton">Find Phone</string>
