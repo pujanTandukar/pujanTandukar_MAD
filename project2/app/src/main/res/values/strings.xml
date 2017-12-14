@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">project2</string>
+    <string name="app_name">Workout Diary</string>
+    <string name="activity">What did you do today?</string>
+    <string-array name="categories">
+        <item>Category</item>
+        <item>Endurance</item>
+        <item>Strength</item>
+        <item>Balance</item>
+        <item>Flexibility</item>
+    </string-array>
+    <string name="saveButton">Save</string>
+    <string name="barImage">Bar Image</string>
+    <string name="example">THIS IS AN EXAMPLE</string>
+    <string name="minutes"> minutes</string>
+    <string name="numberMins">30 minutes</string>
+    <string name="reloadData">Reaload Data</string>
 </resources>

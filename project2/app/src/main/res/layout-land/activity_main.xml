@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context="com.example.pujan.project2.MainActivity">
 
     <EditText
@@ -17,21 +18,22 @@
         android:hint="@string/activity"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appName" />
+        app:layout_constraintTop_toBottomOf="@+id/appName"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/appName"
         android:layout_width="165dp"
         android:layout_height="27dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/poiret_one"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,33 +42,33 @@
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="23dp"
-        android:layout_marginBottom="100dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="8dp"
         android:dropDownWidth="match_parent"
         android:entries="@array/categories"
-        app:layout_constraintBottom_toBottomOf="@+id/reloadData"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
         android:id="@+id/seekBar"
         style="@android:style/Widget.Material.Light.SeekBar"
         android:layout_width="120dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="93dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="8dp"
         android:max="105"
         android:min="15"
         android:progress="30"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/updateTimeBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -86,6 +88,7 @@
             android:layout_height="8dp"
             android:contentDescription="@string/barImage"
             android:foregroundGravity="center"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -98,50 +101,48 @@
 
     <ListView
         android:id="@+id/myListView"
-        android:layout_width="0dp"
+        android:layout_width="321dp"
         android:layout_height="295dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
         android:scrollbarSize="3dp"
         android:scrollbars="vertical"
         android:scrollingCache="true"
         android:smoothScrollbar="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/appName"
+        app:layout_constraintVertical_bias="0.959" />
 
 
     <TextView
         android:id="@+id/updateTimeBar"
         android:layout_width="63dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:fontFamily="@font/josefin_sans"
         android:text="@string/numberMins"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <Button
         android:id="@+id/button"
         android:layout_width="118dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:fontFamily="@font/josefin_sans"
         android:text="@string/saveButton"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintBottom_toTopOf="@+id/reloadData"
+        app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
@@ -149,15 +150,15 @@
         android:id="@+id/reloadData"
         android:layout_width="118dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="@android:color/holo_orange_light"
         android:fontFamily="@font/josefin_sans"
         android:text="@string/reloadData"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
