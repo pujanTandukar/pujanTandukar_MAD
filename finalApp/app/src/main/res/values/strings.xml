@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Burrito</string>
+    <string name="nameOfApp">Burrito Builder</string>
+    <string name="meatOn">Meat</string>
+    <string name="veggieOn">Veggie</string>
+    <string name="hintBurritoName">Burrito Name</string>
+    <string name="pickBurrito">Burrito</string>
+    <string name="pickTaco">Taco</string>
+    <string name="cheese">Cheese</string>
+    <string name="guacamole">Guacamole</string>
+    <string name="sourCream">Sour Cream</string>
+    <string name="salsa">Salsa</string>
+    <string-array name="placeEntries">
+        <item>The Hill</item>
+        <item>29th Street</item>
+        <item>Pearl Street</item>
+    </string-array>
+    <string name="glutenFree">Gluten-Free</string>
+    <string name="buildButton">Build</string>
+    <string name="findButton">Find Burrito</string>
+    <string name="contentDesc">Image of your food</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="isA">" is a "</string>
+    <string name="placeCheck">You should check out </string>
+    <string name="checkOutMe">You should check out </string>
+    <string name="contentDforSe">Earth</string>
+</resources>
